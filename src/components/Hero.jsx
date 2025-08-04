@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import heroImage from '../assets/hero-img.webp';       
 import downArrow from '../assets/down-arrow.svg';    
 import Brands from './Brands';
+import starImage from '../assets/stars.webp'
 
 const Hero = () => {
   return (
@@ -17,6 +18,9 @@ const Hero = () => {
         <span className='w-[120px] h-[1px] absolute -right-7 bottom-15 rotate-45 bg-gray-600' />
       </span>
     </div>
+
+    {/* Star */}
+    <img src={starImage} alt="star absolute image" className='white-filter absolute right-7 top-5' />
 
     <div className="flex-1">
 

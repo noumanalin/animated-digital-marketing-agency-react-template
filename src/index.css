@@ -44,6 +44,36 @@ body {
 }
 
 
+.after-line::after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background-color: gray;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -5px;
+}
+
+ 
+
+.underline-css::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  transition: width 0.3s ease; 
+}
+
+.underline-css:hover::after {
+  width: 90px;
+}
+
+
+
 /* Reset */
 button {
   cursor: pointer;
@@ -96,7 +126,15 @@ html {
   display: none !important; 
 }
 
+.fade-slider .swiper-slide {
+    opacity: 0 !important;
+    transition: opacity 0.8s ease;
+}
 
+.fade-slider .swiper-slide-active,
+.fade-slider .swiper-slide-duplicate-active {
+    opacity: 1 !important;
+}
 
 /* webkit */
 html {
