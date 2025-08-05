@@ -83,6 +83,9 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  scroll-behavior: smooth;
+}
 /* Custom Class with Tailwind */
 
 .center-center {
@@ -141,6 +144,7 @@ html {
   scrollbar-width: thin; 
   scrollbar-color: #555 #fff;
 }
+
 
 
 
