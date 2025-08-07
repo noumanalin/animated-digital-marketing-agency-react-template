@@ -1,5 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/framer-motion";
 
 const JournalCard = ({
   image,
@@ -8,7 +10,12 @@ const JournalCard = ({
   url = "/",
 }) => {
   return (
-    <article className="group flex-1 flex-bc flex-col md:flex-row relative">
+    <motion.article
+     variants={fadeIn("left", "tween", 0.4, 2)}
+     initial="hidden"
+     whileInView="show"
+     viewport={{ once: false, amount: 0.3 }}
+     className="group flex-1 flex-bc flex-col md:flex-row relative">
       {/* Image */}
       <figure className="relative w-full md:w-[60%] overflow-hidden h-64 md:h-[450px]">
         <img
@@ -45,7 +52,7 @@ const JournalCard = ({
           </Link>
         </div>
       </section>
-    </article>
+    </motion.article>
   );
 };
 

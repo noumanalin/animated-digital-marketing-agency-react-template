@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { fadeIn } from '../utils/framer-motion';
 
 import quoteIcon from '../assets/qoutes.png';
 import leftArrow from '../assets/arrow-left.svg';
@@ -39,8 +40,8 @@ const reviews = [
 ];
 
 const Reviews = () => {
-  const sectionRef = useRef(null); 
-    // 1. Use proper scroll tracking with container ref
+  const sectionRef = useRef(null);
+  // 1. Use proper scroll tracking with container ref
   const { scrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"]
@@ -58,7 +59,7 @@ const Reviews = () => {
     setIsScrollingDown(currentScrollY > prevScrollY.current);
     prevScrollY.current = currentScrollY;
   });
-   
+
 
   const swiperRef = useRef(null);
   const prevRef = useRef(null);
@@ -72,21 +73,33 @@ const Reviews = () => {
   return (
     <section
       ref={sectionRef}
-      className="w-full md:h-[1100px] py-20 relative center-center bg-accent"
+      className="w-full md:h-[1100px] py-20 relative center-center bg-accent overflow-hidden"
     >
+      {/* Animate Floating Images */}
       {imagePositions.map((img, idx) => (
         <motion.img
           key={idx}
           src={img.src}
           alt={`Decorative ${idx}`}
-          className={`hidden md:block absolute ${img.className} object-cover z-0 transition-transform duration-300`}
-          style={{ 
-            scale: isScrollingDown ? scale : 1
+          className={`hidden md:block absolute ${img.className} object-cover z-0`}
+          style={{
+            scale: isScrollingDown ? scale : 1,
           }}
+          variants={fadeIn("up", "tween", 0.1 * idx, 2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
         />
       ))}
 
-      <article className="relative h-[450px] container-lg">
+      {/* Main Swiper Section */}
+      <motion.article
+        variants={fadeIn("up", "spring", 0.2, 3)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="relative h-[450px] container-lg z-10"
+      >
         {isNavReady && (
           <Swiper
             ref={swiperRef}
@@ -110,7 +123,13 @@ const Reviews = () => {
           >
             {reviews.map((review, index) => (
               <SwiperSlide key={index}>
-                <artical className="p-8 text-center flex flex-col items-center">
+                <motion.article
+                  variants={fadeIn("up", "tween", 0.3 + index * 0.2, 1)}
+                  initial="hidden"
+                  whileInView="show"
+                  viewport={{ once: true }}
+                  className="p-8 text-center flex flex-col items-center"
+                >
                   <img
                     src={quoteIcon}
                     alt="Quote Icon"
@@ -125,12 +144,13 @@ const Reviews = () => {
                   <span className="text-gray text-[14px]">
                     {review.position}
                   </span>
-                </artical>
+                </motion.article>
               </SwiperSlide>
             ))}
           </Swiper>
         )}
 
+        {/* Arrows */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex gap-4 z-50">
           <button
             ref={prevRef}
@@ -145,7 +165,7 @@ const Reviews = () => {
             <img src={rightArrow} alt="Next" className="w-5 white-filter" />
           </button>
         </div>
-      </article>
+      </motion.article>
     </section>
   );
 };

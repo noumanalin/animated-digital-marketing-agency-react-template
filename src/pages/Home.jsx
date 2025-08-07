@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import FeaturedWork from '../components/FeaturedWork'
 import FaqComponent from '../components/faqs/FaqComponent' 
 import Journal from '../components/journal/Journal'
-import Test from '../components/horizontalScroll/Test'
 import HorizontalScroll from '../components/horizontalScroll/HorizontalScroll'
 
 const Home = () => {

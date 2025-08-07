@@ -1,41 +1,45 @@
-import { Link } from "react-router-dom"
+import { motion } from 'framer-motion'
+import { fadeIn, textVariants } from '../utils/framer-motion'
+
 import image1 from '../assets/service-1.jpg'
 import image2 from '../assets/service-2.jpg'
 import image3 from '../assets/service-3.jpg'
 import image4 from '../assets/service-4.jpg'
+import ServiceCard from "./ServiceCard"
+
 
 const services = [
   {
-    id:1,
-    title:"Search Engine Optimization",
-    description:"We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list:[{item:"mobile & web design"}, {item:"interaction design"}, {item:"UX Research & Plan"}],
-    img:image1,
-    url:""
-  },  
+    id: 1,
+    title: "Search Engine Optimization",
+    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
+    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    img: image1,
+    url: ""
+  },
   {
-    id:2,
-    title:"Email Marketing",
-    description:"We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list:[{item:"mobile & web design"}, {item:"interaction design"}, {item:"UX Research & Plan"}],
-    img:image2,
-    url:""
+    id: 2,
+    title: "Email Marketing",
+    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
+    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    img: image2,
+    url: ""
   },
-    {
-    id:3,
-    title:"COntent Marketing",
-    description:"We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list:[{item:"mobile & web design"}, {item:"interaction design"}, {item:"UX Research & Plan"}],
-    img:image3,
-    url:""
+  {
+    id: 3,
+    title: "COntent Marketing",
+    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
+    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    img: image3,
+    url: ""
   },
-    {
-    id:4,
-    title:"Social Marketing",
-    description:"We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list:[{item:"mobile & web design"}, {item:"interaction design"}, {item:"UX Research & Plan"}],
-    img:image4,
-    url:""
+  {
+    id: 4,
+    title: "Social Marketing",
+    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
+    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    img: image4,
+    url: ""
   },
 ]
 
@@ -44,65 +48,49 @@ const Services = () => {
   return (
     <section className="w-full bg-accent">
       <div className="container-sm">
-      {/* vertical section */}
-       <div className="relative py-15 md:pt-32 max-w-[600px] mx-auto">
+        {/* vertical section */}
+        <div className="relative py-15 md:pt-32 max-w-[600px] mx-auto">
           {/* vertical line */}
           <span className="hidden md:block h-full min-h-[300px] w-[1px] absolute left-28 -top-2 z-0 bg-zinc-700"></span>
 
           <div className="text-light z-50 bg-accent relative py-3">
             <h4 className="text-[18px]">Services</h4>
-            <h2 className="text-6xl font-bold uppercase my-2">
+            <motion.h2
+              variants={textVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.5 }}
+              className="text-6xl font-bold uppercase my-2">
               <span>Our marketing</span> <br />
               <span>Services</span>
-            </h2>
+            </motion.h2>
           </div>
 
           <div className="md:ml-32 text-gray max-w-[400px] relative right-0 z-50">
-            <p>
+            <motion.p
+              variants={fadeIn("up", "tween", 0.3, 2)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.3 }}
+            >
               Consumers today rely heavily on digital means to research products. We research a brand of bldend engaging with it, according to the meanwhile, 51% of consumers say they use Google to research products before buying.
-            </p>
+            </motion.p>
           </div>
-       </div>
+        </div>
 
-       <hr className="w-full h-[1px]  text-zinc-700 my-14" />
+        <hr className="w-full h-[1px]  text-zinc-700 my-14" />
 
-      {/* All Services */}
-      {
-        services && services.map((data, index)=>(
-          <>
-            <article key={index} className="flex flex-col md:flex-row justify-between items-start gap-10">
-              <header className="w-full md:max-w-[375px]">
-                <h2 className="text-4xl uppercase text-light font-bold">{data.title}</h2>
-              </header>
-              
-              <section className="w-full md:max-w-[375px]">
-                <p className="text-lg mb-5 text-light"><strong>{data.description}</strong></p>
-                <ul className="space-y-2 text-gray">
-                  {data.list && data.list.map((l, idx) => (
-                    <li key={idx} className="flex items-start">
-                     <strong>
-                       <span className="mr-2">+</span>
-                        <span className="capitalize">{l.item}</span>
-                     </strong>
-                    </li>
-                  ))}
-                </ul>
-              </section>
-              
-              <div className="w-full md:flex-1 md:flex md:justify-end">
-                <Link 
-                to={data.url}
-                className="px-5 py-7 rounded-full border border-gray-300 text-light hover:bg-gray-700 transition-colors"
-              >
-                Details
-              </Link>
-              </div>
-            </article>
+        {/* All Services */}
+        {
+          services && services.map((data, index) => (
+            <>
+              <ServiceCard key={index} data={data} />
 
-          <hr className="w-full h-[1px] text-zinc-700 my-14" />
-          </>
-        ))
-      }
+
+              <hr className="w-full h-[1px] text-zinc-700 my-14" />
+            </>
+          ))
+        }
       </div>
     </section>
   )

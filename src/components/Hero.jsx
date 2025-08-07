@@ -1,11 +1,13 @@
 
-import { Link } from 'react-router-dom'
+
 import { motion } from 'framer-motion'
 
 import heroImage from '../assets/hero-img.webp';       
 import downArrow from '../assets/down-arrow.svg';    
 import Brands from './Brands';
 import starImage from '../assets/stars.webp'
+import MyButton from './my-button/MyButton';
+import { ArrowBigDownIcon } from 'lucide-react';
 
 const Hero = () => {
   return (

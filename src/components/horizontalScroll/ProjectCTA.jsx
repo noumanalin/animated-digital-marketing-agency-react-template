@@ -1,4 +1,6 @@
-import React from 'react'
+
+import MyButton from '../my-button/MyButton'
+import { ArrowRight } from 'lucide-react'
 
 const ProjectCTA = () => {
   return (
@@ -11,9 +13,12 @@ const ProjectCTA = () => {
                 <span>great together!</span> 
             </h1>
 
-            <button className='w-48 h-48 rounded-full border border-gray-300 text-light'>
-                contact us
-            </button>
+        <MyButton size='280px' url={'https://www.youtube.com/results?search_query=who+to+make+magnet+button+in+react'}>
+          <span className="relative z-10 text-2xl font-semibold text-gray mix-blend-difference pointer-events-none center-center gap-2 px-3">
+            <span className='w-22'>Contact  with Us</span> 
+            <ArrowRight size={36}/>
+          </span>
+        </MyButton>
         </article>
     </section>
   )
