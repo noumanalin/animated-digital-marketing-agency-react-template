@@ -1,4 +1,4 @@
-import { motion } from "framer-motion" 
+
 import brand1 from '../assets/brand-1.png';
 import brand2 from '../assets/brand-2.png';
 import brand3 from '../assets/brand-3.png';

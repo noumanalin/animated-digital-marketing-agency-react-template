@@ -1,23 +1,21 @@
-
-
 const lightVersionService = [
-  { name: "Our Service", url: "/" },
-  { name: "Service V.2", url: "/" },
-  { name: "Service V.3", url: "/" },
-  { name: "Service V.4", url: "/" },
-  { name: "Service V.5", url: "/" },
-  { name: "Service V.6", url: "/" },
+  { name: "Services Overview", url: "/" },
+  { name: "Services V.2", url: "/" },
+  { name: "Services V.3", url: "/" },
+  { name: "Services V.4", url: "/" },
+  { name: "Services V.5", url: "/" },
+  { name: "Services V.6", url: "/" },
   { name: "Service Details", url: "/" },
 ];
 
 const darkVersionService = [
-  { name: "Our Service", url: "/" },
-  { name: "Service V.2", url: "/" },
-  { name: "Service V.3", url: "/" },
-  { name: "Service V.4", url: "/" },
-  { name: "Service V.5", url: "/" },
-  { name: "Service V.6", url: "/" },
-  { name: "Service Details", url: "/" },
+  { name: "Services Overview Dark", url: "/" },
+  { name: "Services V.2 Dark", url: "/" },
+  { name: "Services V.3 Dark", url: "/" },
+  { name: "Services V.4 Dark", url: "/" },
+  { name: "Services V.5 Dark", url: "/" },
+  { name: "Services V.6 Dark", url: "/" },
+  { name: "Service Details Dark", url: "/" },
 ];
 
 const Service = () => {
@@ -26,7 +24,7 @@ const Service = () => {
       {/* Light Version */}
       <article>
         <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-          Light Version
+          Services Light
         </h3>
         <hr className="text-gray-400" />
         <ul className="px-4 pt-4 space-y-2">
@@ -46,7 +44,7 @@ const Service = () => {
       {/* Dark Version */}
       <article>
         <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-          Dark Version
+          Services Dark
         </h3>
         <hr className="text-gray-400" />
         <ul className="px-4 pt-4 space-y-2">

@@ -1,23 +1,21 @@
-
-
 const lightVersionInner = [
-  { name: "Our Portfolio", url: "/" },
-  { name: "Portfolio V.2", url: "/" },
-  { name: "Portfolio V.3", url: "/" },
-  { name: "Portfolio V.4", url: "/" },
-  { name: "Portfolio V.5", url: "/" },
-  { name: "Portfolio V.6", url: "/" },
-  { name: "Portfolio Details", url: "/" },
+  { name: "Projects Overview", url: "/" },
+  { name: "Projects Grid V.2", url: "/" },
+  { name: "Projects Grid V.3", url: "/" },
+  { name: "Projects Grid V.4", url: "/" },
+  { name: "Projects Grid V.5", url: "/" },
+  { name: "Projects Grid V.6", url: "/" },
+  { name: "Project Details", url: "/" },
 ];
 
 const darkVersionInner = [
-  { name: "Our Portfolio", url: "/" },
-  { name: "Portfolio V.2", url: "/" },
-  { name: "Portfolio V.3", url: "/" },
-  { name: "Portfolio V.4", url: "/" },
-  { name: "Portfolio V.5", url: "/" },
-  { name: "Portfolio V.6", url: "/" },
-  { name: "Portfolio Details", url: "/" },
+  { name: "Projects Overview Dark", url: "/" },
+  { name: "Projects Grid V.2 Dark", url: "/" },
+  { name: "Projects Grid V.3 Dark", url: "/" },
+  { name: "Projects Grid V.4 Dark", url: "/" },
+  { name: "Projects Grid V.5 Dark", url: "/" },
+  { name: "Projects Grid V.6 Dark", url: "/" },
+  { name: "Project Details Dark", url: "/" },
 ];
 
 const Portfolio = () => {
@@ -26,7 +24,7 @@ const Portfolio = () => {
       {/* Light Version Inner */}
       <article>
         <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-          Light Version (inner)
+          Portfolio Light
         </h3>
         <hr className="text-gray-400" />
         <ul className="px-4 pt-4 space-y-2">
@@ -46,7 +44,7 @@ const Portfolio = () => {
       {/* Dark Version Inner */}
       <article>
         <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-          Dark Version (inner)
+          Portfolio Dark
         </h3>
         <hr className="text-gray-400" />
         <ul className="px-4 pt-4 space-y-2">

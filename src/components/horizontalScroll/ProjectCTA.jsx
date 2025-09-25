@@ -13,7 +13,7 @@ const ProjectCTA = () => {
                 <span>great together!</span> 
             </h1>
 
-        <MyButton size='280px' url={'https://www.youtube.com/results?search_query=who+to+make+magnet+button+in+react'}>
+        <MyButton size='280px' url={'/'}>
           <span className="relative z-10 text-2xl font-semibold text-gray mix-blend-difference pointer-events-none center-center gap-2 px-3">
             <span className='w-22'>Contact  with Us</span> 
             <ArrowRight size={36}/>

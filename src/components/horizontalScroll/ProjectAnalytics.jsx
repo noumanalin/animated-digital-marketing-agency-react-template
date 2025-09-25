@@ -2,17 +2,14 @@ import { useEffect, useState } from "react";
 import image from "../../assets/analytics-banner.webp";
 
 const data = [
-  { id: 1, title: ["Project", "completed"], number: 25, suffix: "K" },
-  { id: 2, title: ["Happy", "customers"], number: 8, suffix: "K" },
-  { id: 3, title: ["Years", "experience"], number: 15, suffix: "" },
-  { id: 4, title: ["Awards", "achievement"], number: 98, suffix: "" },
+  { id: 1, title: ["Projects", "Delivered"], number: 120, suffix: "+" },
+  { id: 2, title: ["Clients", "Worldwide"], number: 50, suffix: "+" },
+  { id: 3, title: ["Years of", "Experience"], number: 7, suffix: "" },
+  { id: 4, title: ["Industry", "Awards"], number: 15, suffix: "" },
 ];
 
 const ProjectAnalytics = () => {
-  // Initialize counters state
-  const [counts, setCounts] = useState(
-    data.map(() => 0)
-  );
+  const [counts, setCounts] = useState(data.map(() => 0));
 
   useEffect(() => {
     const durations = 2000; // 2 seconds animation
@@ -34,8 +31,9 @@ const ProjectAnalytics = () => {
   }, []);
 
   return (
-    <section className="w-screen h-screen center-center bg-dark ">
+    <section className="w-screen h-screen center-center bg-dark">
       <article className="flex flex-col md:flex-row w-full max-w-7xl px-4">
+        
         {/* Numbers */}
         <section className="flex-1 grid grid-cols-2 gap-8">
           {data.map((d, i) => (
@@ -57,7 +55,7 @@ const ProjectAnalytics = () => {
         <figure className="flex-1 relative mt-12 md:mt-0 hidden md:flex items-center justify-center">
           <img
             src={image}
-            alt="Analytics Banner"
+            alt="Analytics Section"
             className="object-cover w-full md:max-h-[500px]"
           />
         </figure>

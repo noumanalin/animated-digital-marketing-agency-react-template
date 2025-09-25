@@ -10,12 +10,12 @@ import quoteIcon from '../assets/qoutes.png';
 import leftArrow from '../assets/arrow-left.svg';
 import rightArrow from '../assets/arrow-right.svg';
 
-import image1 from '../assets/review-1.webp';
+import image1 from '../assets/review-1.jpg';
 import image2 from '../assets/review-2.jpg';
 import image3 from '../assets/review-3.jpg';
 import image4 from '../assets/review-4.jpg';
-import image5 from '../assets/review-5.webp';
-import image6 from '../assets/review-6.webp';
+import image5 from '../assets/review-5.jpg';
+import image6 from '../assets/review-6.jpg';
 
 const imagePositions = [
   { src: image1, className: 'top-15 left-[10%] w-[120px]' },
@@ -28,16 +28,17 @@ const imagePositions = [
 
 const reviews = [
   {
-    name: 'Maria D. Halk',
-    position: 'Managing Director',
-    body: 'When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!',
+    name: "Maria Khan",
+    position: "Marketing Manager",
+    body: "Working with this team has been an amazing experience. They’re responsive, creative, and always willing to go the extra mile to deliver high-quality results on time.",
   },
   {
-    name: 'John Doe',
-    position: 'CEO',
-    body: 'When we talk about Alts, we do not mean a typical business partner, but rather a team that collaborates with us daily, always there for us when we encounter difficulties and celebrate achievements. We see in Alts our best ally for success!',
+    name: "David Lee",
+    position: "Founder & CEO",
+    body: "I was impressed by the professionalism and attention to detail. From planning to execution, everything was smooth, and the final product exceeded our expectations.",
   },
 ];
+
 
 const Reviews = () => {
   const sectionRef = useRef(null);

@@ -5,18 +5,18 @@ import 'swiper/css/effect-fade';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 
-import image1 from '../assets/featured-image-1.webp';
-import image2 from '../assets/featured-image-2.webp';
-import image3 from '../assets/featured-image-3.webp';
-import image4 from '../assets/featured-image-4.webp';
+import image1 from '../assets/featured-image-1.jpg';
+import image2 from '../assets/featured-image-2.jpg';
+import image3 from '../assets/featured-image-3.jpg';
+import image4 from '../assets/featured-image-4.jpg';
 import leftArrow from '../assets/arrow-left.svg';
 import rightArrow from '../assets/arrow-right.svg';
 
 const data = [
-    { id: 1, text: ["benjon", "website", "2012"], image: image1 },
-    { id: 2, text: ["benjon", "website", "2012"], image: image2 },
-    { id: 3, text: ["benjon", "website", "2012"], image: image3 },
-    { id: 4, text: ["benjon", "website", "2012"], image: image4 },
+  { id: 1, text: ["Portfolio", "Web", "2022"], image: image1 },
+  { id: 2, text: ["Landing", "Page", "2023"], image: image2 },
+  { id: 3, text: ["E-Commerce", "Store", "2024"], image: image3 },
+  { id: 4, text: ["Creative", "Agency", "2025"], image: image4 },
 ];
 
 const totalCards = data.length;

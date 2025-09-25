@@ -1,47 +1,47 @@
 import React from "react";
 
 const homeLight = [
-  { name: "Digital Marketing", url: "/" },
-  { name: "Design Studio", url: "/" },
-  { name: "Digital Agency", url: "/" },
-  { name: "Creative Agency", url: "/" },
-  { name: "Modern Agency", url: "/" },
-  { name: "Startup Agency", url: "/" },
-  { name: "Personal Portfolio", url: "/" },
+  { name: "Online Promotion", url: "/" },
+  { name: "Creative Workspace", url: "/" },
+  { name: "Web Firm", url: "/" },
+  { name: "Innovative Firm", url: "/" },
+  { name: "Contemporary Firm", url: "/" },
+  { name: "New Venture Firm", url: "/" },
+  { name: "Individual Showcase", url: "/" },
 ];
 
 const homeDark = [
-  { name: "Digital Marketing", url: "/" },
-  { name: "Design Studio", url: "/" },
-  { name: "Digital Agency", url: "/" },
-  { name: "Creative Agency", url: "/" },
-  { name: "Modern Agency", url: "/" },
-  { name: "Startup Agency", url: "/" },
-  { name: "Personal Portfolio", url: "/" },
+  { name: "Online Promotion", url: "/" },
+  { name: "Creative Workspace", url: "/" },
+  { name: "Web Firm", url: "/" },
+  { name: "Innovative Firm", url: "/" },
+  { name: "Contemporary Firm", url: "/" },
+  { name: "New Venture Firm", url: "/" },
+  { name: "Individual Showcase", url: "/" },
 ];
 
 const portfolioLight = [
-  { name: "Portfolio Showcase", url: "/" },
-  { name: "Showcase Carousel", url: "/" },
-  { name: "Interactive Link", url: "/" },
-  { name: "Portfolio Masonry", url: "/" },
-  { name: "Vertical Grid", url: "/" },
-  { name: "Interactive Image Slider", url: "/" },
-  { name: "Showcase Parallax", url: "/" },
-  { name: "Logo Showcase", url: "/" },
-  { name: "Interactive Hover Showcase", url: "/" },
-  { name: "Showcase Slider", url: "/" },
+  { name: "Project Display", url: "/" },
+  { name: "Display Rotator", url: "/" },
+  { name: "Dynamic Connection", url: "/" },
+  { name: "Project Grid Layout", url: "/" },
+  { name: "Upright Layout", url: "/" },
+  { name: "Dynamic Photo Slider", url: "/" },
+  { name: "Display Scroll Effect", url: "/" },
+  { name: "Brand Display", url: "/" },
+  { name: "Dynamic Reveal Display", url: "/" },
+  { name: "Display Slider", url: "/" },
 ];
 
 const portfolioDark = [
-  { name: "Portfolio Showcase", url: "/" },
-  { name: "Showcase Carousel", url: "/" },
-  { name: "Interactive Link", url: "/" },
-  { name: "Portfolio Masonry", url: "/" },
-  { name: "Vertical Grid", url: "/" },
-  { name: "Interactive Image Slider", url: "/" },
-  { name: "Showcase Parallax", url: "/" },
-  { name: "Logo Showcase", url: "/" },
+  { name: "Project Display", url: "/" },
+  { name: "Display Rotator", url: "/" },
+  { name: "Dynamic Connection", url: "/" },
+  { name: "Project Grid Layout", url: "/" },
+  { name: "Upright Layout", url: "/" },
+  { name: "Dynamic Photo Slider", url: "/" },
+  { name: "Display Scroll Effect", url: "/" },
+  { name: "Brand Display", url: "/" },
 ];
 
 const Demos = () => (
@@ -49,7 +49,7 @@ const Demos = () => (
     {/* Home Light */}
     <article>
       <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-        Home Light
+        Main Light
       </h3>
       <hr className="text-gray-400" />
       <ul className="px-4 pt-4 space-y-2">
@@ -69,7 +69,7 @@ const Demos = () => (
     {/* Home Dark */}
     <article>
       <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-        Home Dark
+        Main Dark
       </h3>
       <hr className="text-gray-400" />
       <ul className="px-4 pt-4 space-y-2">
@@ -89,7 +89,7 @@ const Demos = () => (
     {/* Portfolio Light */}
     <article>
       <h3 className="px-4 pt-4 text-md  font-bold uppercase mb-4 text-black">
-        Portfolio Light
+        Projects Light
       </h3>
       <hr className="text-gray-400" />
       <ul className="px-4 pt-4 space-y-2">
@@ -109,7 +109,7 @@ const Demos = () => (
     {/* Portfolio Dark */}
     <article>
       <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-        Portfolio Dark
+        Projects Dark
       </h3>
       <hr className="text-gray-400" />
       <ul className="px-4 pt-4 space-y-2">

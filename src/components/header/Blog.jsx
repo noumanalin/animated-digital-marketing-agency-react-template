@@ -1,15 +1,13 @@
-
-
 const blogItems = [
-  { name: "Blog", url: "/" },
-  { name: "Blog Dark", url: "/" },
-  { name: "Blog Details", url: "/" },
+  { name: "All Articles", url: "/" },
+  { name: "News & Updates", url: "/" },
+  { name: "Single Article", url: "/" },
 ];
 
 const Blog = () => {
   return (
     <section className="min-w-[250px] mx-auto border-t border-l divide-gray-400 text-left py-4">
-      {/* Blog Items */}
+      {/* Blog Menu */}
       <article>
         <ul className="px-4 pt-4 space-y-2">
           {blogItems.map((item) => (

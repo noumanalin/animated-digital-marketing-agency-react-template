@@ -1,4 +1,4 @@
-import bgWho from '../assets/who-baner.webp';
+import bgWho from '../assets/who-baner.jpg';
 import { motion } from 'framer-motion';
 import MyButton from './my-button/MyButton';
 import { ArrowUpRight } from 'lucide-react';
@@ -15,7 +15,7 @@ const WhoWeAre = () => {
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 0.5, ease: 'linear' }}
           viewport={{ once: true, amount: 0.3 }}
-          className="origin-left w-full md:w-[45%] h-[650px] bg-cover bg-center bg-fixed bg-no-repeat py-4"
+          className=" w-full md:w-[45%] h-[650px] bg-contain bg-center bg-fixed bg-no-repeat py-4"
           style={{ backgroundImage: `url(${bgWho})` }}
         />
 

@@ -12,36 +12,53 @@ const services = [
   {
     id: 1,
     title: "Search Engine Optimization",
-    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    description: "Boost your online visibility with smart SEO strategies that bring the right audience to your business.",
+    list: [
+      { item: "On-page & off-page SEO" },
+      { item: "Keyword research & planning" },
+      { item: "Performance tracking & reporting" }
+    ],
     img: image1,
     url: ""
   },
   {
     id: 2,
-    title: "Email Marketing",
-    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    title: "Email Campaigns",
+    description: "Reach your customers directly with engaging email campaigns that increase trust and sales.",
+    list: [
+      { item: "Custom newsletter design" },
+      { item: "Automated campaign setup" },
+      { item: "Analytics & optimization" }
+    ],
     img: image2,
     url: ""
   },
   {
     id: 3,
-    title: "COntent Marketing",
-    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    title: "Content Strategy",
+    description: "Create powerful content that tells your brand story and connects with your audience.",
+    list: [
+      { item: "Blog writing & editing" },
+      { item: "Social media content" },
+      { item: "SEO-friendly articles" }
+    ],
     img: image3,
     url: ""
   },
   {
     id: 4,
-    title: "Social Marketing",
-    description: "We help brands stand out through aweful, elegant visual design. Our design mainly philosophy.",
-    list: [{ item: "mobile & web design" }, { item: "interaction design" }, { item: "UX Research & Plan" }],
+    title: "Social Media Marketing",
+    description: "Grow your brand presence with creative social campaigns designed to engage and convert.",
+    list: [
+      { item: "Targeted ad campaigns" },
+      { item: "Community management" },
+      { item: "Creative post design" }
+    ],
     img: image4,
     url: ""
   },
-]
+];
+
 
 
 const Services = () => {

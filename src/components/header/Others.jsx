@@ -1,24 +1,22 @@
-
-
 const lightVersionOthers = [
-  { name: "Our Team", url: "/" },
-  { name: "Team Details", url: "/" },
-  { name: "About Us", url: "/" },
-  { name: "About Us V.2", url: "/" },
-  { name: "Contact Us", url: "/" },
-  { name: "Our Careers", url: "/" },
-  { name: "Job Details", url: "/" },
-  { name: "FAQs", url: "/" },
-  { name: "404 Page", url: "/" },
+  { name: "Our Group", url: "/" },
+  { name: "Group Profile", url: "/" },
+  { name: "Company Info", url: "/" },
+  { name: "Company Info V.2", url: "/" },
+  { name: "Reach Out", url: "/" },
+  { name: "Job Openings", url: "/" },
+  { name: "Position Info", url: "/" },
+  { name: "Help Center", url: "/" },
+  { name: "Error Page", url: "/" },
 ];
 
 const darkVersionOthers = [
-  { name: "Our Team", url: "/" },
-  { name: "Team Details", url: "/" },
-  { name: "About Us", url: "/" },
-  { name: "Contact Us", url: "/" },
-  { name: "Our Careers", url: "/" },
-  { name: "FAQs", url: "/" },
+  { name: "Our Group", url: "/" },
+  { name: "Group Profile", url: "/" },
+  { name: "Company Info", url: "/" },
+  { name: "Reach Out", url: "/" },
+  { name: "Job Openings", url: "/" },
+  { name: "Help Center", url: "/" },
 ];
 
 const Others = () => {
@@ -27,7 +25,7 @@ const Others = () => {
       {/* Light Version */}
       <article>
         <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-          Others Light
+          Additional Light
         </h3>
         <hr className="text-gray-400" />
         <ul className="px-4 pt-4 space-y-2">
@@ -47,7 +45,7 @@ const Others = () => {
       {/* Dark Version */}
       <article>
         <h3 className="px-4 pt-4 text-md font-bold uppercase mb-4 text-black">
-          Others Dark
+          Additional Dark
         </h3>
         <hr className="text-gray-400" />
         <ul className="px-4 pt-4 space-y-2">
